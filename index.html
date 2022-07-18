@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Kai&mdash;Bored - A Keyboard Informative</title>
+</head>
+<body>
+    <header>
+        <h1 class="title">Kai&mdash;Bored</h1>
+        <p class="title-description">A KeyBoard Informative</p>
+    </header>
+    <main class="container">
+        <section class="screen key-display">
+            <p class="key-inputed">Press any key to get info</p>
+        </section>
+        <section class="screen key-logs">
+            <div class="key-information">
+                <div class="key-info-card code-card">
+                    <div class="card-key">event.code</div>
+                    <div class="card-value event-code">-</div>
+                </div>
+                <div class="key-info-card key-card">
+                    <div class="card-key">event.key</div>
+                    <div class="card-value event-key">-</div>
+                </div>
+                <div class="key-info-card keycode-card">
+                    <div class="card-key">event.keyCode</div>
+                    <div class="card-value event-keycode">-</div>
+                </div>
+                <div class="key-info-card shiftkey-card">
+                    <div class="card-key">event.shiftKey</div>
+                    <div class="card-value event-shiftkey">-</div>
+                </div>
+                <div class="key-info-card location-card">
+                    <div class="card-key">event.location</div>
+                    <div class="card-value event-location">-</div>
+                </div>
+            </div>
+            <div class="keylog-history">
+                <table>
+                    <caption>History</caption>
+                    <thead>
+                        <tr>
+                            <th>code</th>
+                            <th>key</th>
+                            <th>keyCode</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>

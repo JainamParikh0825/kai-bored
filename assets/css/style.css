@@ -1,0 +1,134 @@
+:root{
+    --header-background-color: #000;
+    --header-text-color: #fff;
+    --left-screen-background-color: #f85e00;
+    --right-screen-background-color: #f5ebe0;
+    --left-screen-text-color: #000;
+    --right-screen-text-color: #000;
+}
+
+header{
+    width: 100%;
+    background-color: var(--header-background-color);
+    color: var(--header-text-color);
+    padding: 2px 50px;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    height: 7vh;
+}
+
+.title,
+.title-description{
+    width: max-content;
+    margin: 0 auto;
+}
+
+.title{
+    font-size: 1.3em;
+}
+
+.title-description{
+    font-size: 0.7em;
+}
+
+.container{
+    height: 93vh;
+    display: flex;
+}
+
+.screen{
+    flex-basis: 50%;
+}
+
+.key-display,
+.key-information{
+    height: 100%;
+}
+
+.key-display{
+    background-color: var(--left-screen-background-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.key-display:hover .key-inputed{
+    transform: scale(1.05);
+}
+
+.key-logs{
+    background-color: var(--right-screen-background-color);
+}
+
+.key-information{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px 30px;
+    gap: 0px 5px;
+    height: 60%;
+}
+
+.key-inputed{
+    color: var(--left-screen-text-color);
+    font-size: 3em;
+    transition: transform 0.2s;
+}
+
+.key-info-card{
+    height: 10em;
+    background-color: var(--left-screen-background-color);
+    color: var(--left-screen-text-color);
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    flex-basis: 30%;
+}
+
+.key-info-card:nth-child(n + 4){
+    flex-basis: 45%;
+}
+
+.card-key{
+    width: 100%;
+    border-bottom: 5px solid #000;
+    text-align: center;
+    padding: 5px;
+}
+
+.card-value{
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+    padding-top: 25px;
+    font-weight: bold;
+}
+
+table{
+    width: 80%;
+    margin-inline: auto;
+    border-collapse: collapse;
+    border: 1px solid #000;
+    font-size: 1.2em;
+}
+
+th, td{
+    border: 1px solid #000;
+    text-align: center;
+}
+
+th:first-of-type,
+td:first-of-type{
+    width: 40%;
+}
+
+th:nth-of-type(2),
+td:nth-of-type(2){
+    width: 40%;
+}
+
+tbody tr:nth-of-type(odd){
+    background-color: #ff9770;
+}
